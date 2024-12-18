@@ -6,3 +6,6 @@ node_modules/
 
 # prevent the config file from being pushed
 config.json
+
+# prevent files folder from being pushed
+files/

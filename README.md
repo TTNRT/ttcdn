@@ -88,5 +88,14 @@ systemctl enable --now ttcdn.service
 
 You should see the server running by going to the server website and the port number it's hosting on.
 
+## Adding your files
+To add your files, you need to create folder named "files" that should located in the root directory where the server files are located! You may add any files you want. If a file you have requested isn't present or is deleted from the folder, you will get an error that it cannot find what you're looking for! Be sure to have the needed permissions when needed!
+
+> [!NOTE]
+> If you have used the Docker method to deploy the CDN server, you need to add the folder as a volume so that the container can use it without having to upload anything to the container. If you are not sure how to get volumes working, you may have a look at the Docker documentation for a more better understanding! Below is an example on getting it working for your compose file.
+> ```yaml
+> volumes:
+>   - ./files:/app/files
+
 ## Getting help
 If you need any help with getting it working, you may give us an email, or by asking on our Discord server. Make sure you describe what your problem is so that we can understand it more.
