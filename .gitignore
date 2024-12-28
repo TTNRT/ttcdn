@@ -8,4 +8,4 @@ node_modules/
 config.json
 
 # prevent files folder from being pushed
-files/
+#files/

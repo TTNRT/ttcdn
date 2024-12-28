@@ -98,4 +98,10 @@ To add your files, you need to create folder named "files" that should located i
 >   - ./files:/app/files
 
 ## Getting help
-If you need any help with getting it working, you may give us an email, or by asking on our Discord server. Make sure you describe what your problem is so that we can understand it more.
+If you need any help with getting it working, you may give us an email, or by asking on our Discord server. Make sure you describe what your problem is so that we can understand it more. You may also get help on it by submitting an issue to this repository here on GitHub as well! Any of these options to get help is completely up to you!
+
+## Modifying it
+If you would like to modify the server files such as the `app.js` or `config.json` files with more options or parameters, you may do so by forking this repository or downloading it and uploading it's core files to your own repository! If you need more information on how to use the Express or NodeJS frameworks, the resource links below might help you out!
+
+- [Express documentation](https://expressjs.com/)
+- [NodeJS documentation](https://nodejs.org/docs/latest/api/)
