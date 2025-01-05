@@ -1,5 +1,5 @@
 # TTCDN
-Source code for parts of our CDN website
+Source code for parts of our CDN website and server
 
 ## Info
 
@@ -105,3 +105,23 @@ If you would like to modify the server files such as the `app.js` or `config.jso
 
 - [Express documentation](https://expressjs.com/)
 - [NodeJS documentation](https://nodejs.org/docs/latest/api/)
+
+## Error messages
+### 404 error
+If you get a 404 error response that looks like this:
+
+```json
+{
+    "status": 404,
+    "message": "Cannot find the file or folder you're looking for! Check the readme file for more information!"
+}
+```
+This just means that the file or folder you're requesting isn't found inside the folder set for grabbing the files. If you get this message, you only need to check if it actaully exists. If you're file does exist but this message randomly appears, you may need to change the folder permissions so that other users can access it.
+
+> [!NOTE]
+> 
+> If this message appears when using docker, ensure that the docker user and group has permissions to access the files folder so that it can read the data from it. You should also do this if your running the server using systemd, but only set the permissions to the user that is running the server and service file.
+
+> [!WARNING]
+>
+> It's not recommended to set the permissions to use the root user (if on Linux) since this won't allow you to read or edit them. Set the user and group permissions to a user that is not the root user. You can do this by using the `chown` command. You may need to Google on how to do this.

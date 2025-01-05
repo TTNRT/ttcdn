@@ -1,3 +1,4 @@
 {
-    "AppName": "CDN Network"
+    "AppName": "CDN Network",
+    "FilesFolder": "files"
 }
